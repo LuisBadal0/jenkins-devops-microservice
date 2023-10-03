@@ -27,7 +27,7 @@ pipeline {
 		}
 		stage('Compile') {
 			steps {
-				sh "mvn clean install"
+				sh "mvn clean compile"
 			}
 		}
 
@@ -37,11 +37,11 @@ pipeline {
 			}
 		}
 		
-		// stage('Integration Test') {
-		// 	steps {
-		// 		sh "mvn failsafe:integration-test failsafe:verify"
-		// 	}
-		// }
+		stage('Integration Test') {
+			steps {
+				sh "mvn failsafe:integration-test failsafe:verify"
+			}
+		}
 		stage('Package') {
 			steps {
 				sh "mvn package -Dskiptest"
