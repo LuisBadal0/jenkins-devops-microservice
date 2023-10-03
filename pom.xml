@@ -26,7 +26,7 @@
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 		<spring-cloud.version>Greenwich.SR3</spring-cloud.version>
 
-		<surefire.version>3.1.2</surefire.version>
+		<surefire.version>2.22.1</surefire.version>
 		<failsafe.version>2.22.1</failsafe.version>
 
 		<jacoco.version>0.8.8</jacoco.version>
@@ -91,7 +91,7 @@
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured-all</artifactId>
-			<version>4.0.0</version>
+			<version>4.3.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
